@@ -1,0 +1,64 @@
+.meio {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+
+}
+
+body {
+	background:#872020;
+}
+
+.imagens {
+	border-radius: 25px;
+	margin-top: 20px;
+	border: 20px solid  #2E0707;
+}
+
+.topo {
+	text-align: center ;
+	border: 8px solid #2E0707;
+	margin-bottom: 100px;
+	font-family: arial ;
+
+}
+
+p {
+	font-family: arial;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.imagens {
+	margin: 5px; 
+	border-radius: 10px;
+	border: 8px solid #190808;
+	
+}
+
+.imagens:hover {
+	border: 2px solid #0E0909;
+	opacity: 0.5;
+	transform: scale(1.3);
+	box-shadow: 0 10px 10px rgba(255, 255, 255, 1.0);
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.topo {
+	animation-name: slideIn;
+	animation-duration: 1s;
+	animation-timing-function: easy-out;
+	animation-delay: 0.5s;
+	animation-iteration-count:3;
+	animation-direction:alternate ;
+}
